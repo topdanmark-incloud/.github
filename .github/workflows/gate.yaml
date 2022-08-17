@@ -1,0 +1,38 @@
+name: gate
+
+on:
+  workflow_call:
+    inputs:
+      environment:
+        description: |
+          The ServiceNow environment to use for approval for deployment.
+          Valid values are staging (dev) or production (live)
+        required: false
+        type: string
+        default: 'production'
+      approvers:
+        description: |
+          The list of approvers to use for the deployment.
+          Multiple approvers can be specified by separating them with a comma.
+          All specified approvers will be notified in ServiceNow
+        required: true
+        type: string
+    secrets:
+      servicenow-auth-token:
+        description: |
+          The token needed to authenticate with ServiceNow.
+          This token is supplied by ServiceNow and created as a organization secret called SERVICE_NOW_AUTH_TOKEN
+        required: true
+
+jobs:
+  gate:
+    runs-on: [self-hosted, CoreServices, AWS]
+    environment:
+      name: production-gate
+    steps:
+      - name: Create service now approval request
+        uses: in-cloud/ga-servicenow-approval@v2
+        with:
+          approvers: ${{ inputs.approvers }}
+          environment: ${{ inputs.environment }}
+          servicenow-auth-token: ${{ secrets.servicenow-auth-token }}
