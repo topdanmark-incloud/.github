@@ -1,6 +1,5 @@
 # Welcome to InCloud 👋
 
-
 ![Team](https://github.devops.topdanmark.cloud/in-cloud/.github/blob/main/images/incloud-team.jpg)
 
 We are the [in-cloud team](https://github.com/orgs/topdanmark-incloud/teams/in-cloud/members)
