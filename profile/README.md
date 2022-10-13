@@ -7,4 +7,4 @@ and yes we are the ones taking care of your AWS and Azure solutions. You can fin
 
 We also have a [kanban board](https://dev.azure.com/Topdanmark/FNDN%20Cloud%20Core%20Services/_boards/board/t/Cloud%20Core%20Services%20Team/Stories) and future [epics](https://dev.azure.com/Topdanmark/FNDN%20Cloud%20Core%20Services/_backlogs/backlog/FNDN%20Cloud%20Core%20Services%20Portfolio/Epics)
 
-Browse our [GitHub Actions](https://github.devops.topdanmark.cloud/search?q=topic%3Ain-cloud-github-action&type=Repositories), [NPM Packages](https://github.devops.topdanmark.cloud/search?q=topic%3Ain-cloud-npm-package&type=Repositories) or [CDK Projects](https://github.devops.topdanmark.cloud/search?q=topic%3Ain-cloud-cdk-project&type=Repositories) to see how we are using our tools.
+Browse our [GitHub Actions](https://github.com/search?q=topic%3Ain-cloud-github-action&type=Repositories), [NPM Packages](https://github.com/search?q=topic%3Ain-cloud-npm-package&type=Repositories) or [CDK Projects](https://github.com/search?q=topic%3Ain-cloud-cdk-project&type=Repositories) to see how we are using our tools.
